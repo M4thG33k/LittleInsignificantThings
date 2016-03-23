@@ -41,7 +41,7 @@ public class LIT {
         proxy.postInit(e);
     }
 
-    public static CreativeTabs tabGemulation = new CreativeTabs("tabGemulation") {
+    public static CreativeTabs tabLIT = new CreativeTabs("tabLIT") {
         @Override
         public Item getTabIconItem() {
             return Items.skull;
