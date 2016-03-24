@@ -1,5 +1,6 @@
 package com.m4thg33k.lit;
 
+import com.m4thg33k.lit.blocks.ModBlocks;
 import com.m4thg33k.lit.core.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -44,7 +45,7 @@ public class LIT {
     public static CreativeTabs tabLIT = new CreativeTabs("tabLIT") {
         @Override
         public Item getTabIconItem() {
-            return Items.skull;
+            return Item.getItemFromBlock(ModBlocks.improvedFurnaceBlock);
         }
     };
 

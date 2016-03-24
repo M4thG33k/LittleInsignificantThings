@@ -2,5 +2,5 @@ package com.m4thg33k.lit.lib;
 
 public class Names {
 
-    public static final String IMPROVED_FURNACE = "Improved Furnace";
+    public static final String IMPROVED_FURNACE = "ImprovedFurnaceBlock";
 }

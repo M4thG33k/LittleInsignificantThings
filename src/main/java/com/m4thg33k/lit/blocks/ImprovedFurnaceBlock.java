@@ -2,6 +2,7 @@ package com.m4thg33k.lit.blocks;
 
 import com.m4thg33k.lit.LIT;
 import com.m4thg33k.lit.api.LitStateProps;
+import com.m4thg33k.lit.gui.LitGuiHandler;
 import com.m4thg33k.lit.lib.Names;
 import com.m4thg33k.lit.tiles.TileImprovedFurnace;
 import net.minecraft.block.material.Material;
@@ -80,7 +81,7 @@ public class ImprovedFurnaceBlock extends BaseBlock {
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ) {
         if (!worldIn.isRemote)
         {
-            playerIn.openGui(LIT.instance, LitGuiHandler.GEM_FURNACE_GUI, worldIn,pos.getX(),pos.getY(),pos.getZ());
+            playerIn.openGui(LIT.instance, LitGuiHandler.IMPROVED_FURNACE_GUI, worldIn,pos.getX(),pos.getY(),pos.getZ());
         }
         return true;
     }
