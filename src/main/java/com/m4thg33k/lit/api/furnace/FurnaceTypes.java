@@ -1,5 +1,6 @@
 package com.m4thg33k.lit.api.furnace;
 
+import com.m4thg33k.lit.core.util.LogHelper;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -36,6 +37,11 @@ public class FurnaceTypes {
 
     public static void addType(String typeName, double cookTimeFactor, int upgradeCount, double fuelBooster, int maxFuel, ItemStack block, ItemStack material)
     {
+        if (FurnaceTypes.getTypeByName(typeName)!=null)
+        {
+            LogHelper.error("Error! Furnace type: " + typeName + " has already been registered! Skipping!");
+            return;
+        }
         FurnaceTypes type = new FurnaceTypes(typeName, cookTimeFactor, upgradeCount, fuelBooster, maxFuel,block,material);
         allTypes.add(type);
     }
