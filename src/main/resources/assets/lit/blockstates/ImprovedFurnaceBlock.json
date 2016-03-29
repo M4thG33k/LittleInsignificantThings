@@ -26,6 +26,7 @@
           "front": "lit:blocks/ImprovedFurnaceBlockFront"
         }
       }
-    }
+    },
+    "normal": [{}]
   }
 }

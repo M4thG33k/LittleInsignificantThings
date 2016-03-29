@@ -45,6 +45,7 @@ public class TileImprovedChest extends TileEntityLockable implements ITickable, 
         super();
         this.type = type;
         this.inventory = new ItemStack[getSizeInventory()];
+        this.facing = EnumFacing.NORTH;
     }
 
     public void setContents(ItemStack[] contents)

@@ -1,6 +1,7 @@
 package com.m4thg33k.lit.core.proxy;
 
 import com.m4thg33k.lit.LIT;
+import com.m4thg33k.lit.client.render.ModRenders;
 import com.m4thg33k.lit.client.render.registers.BlockRenderRegister;
 import com.m4thg33k.lit.client.render.registers.ItemRenderRegister;
 import com.m4thg33k.lit.network.packets.PacketNBT;
@@ -25,6 +26,7 @@ public class ClientProxy extends CommonProxy {
         super.init(e);
 
         BlockRenderRegister.registerBlockRenderer();
+        ModRenders.init();
     }
 
     @Override
